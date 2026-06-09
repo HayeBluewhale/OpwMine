@@ -102,13 +102,11 @@ iframe {
 
 @media (max-width: 768px) {
 
-    #foto-regel,
-    #video1 {
+    #foto1,
+    #foto2 #video1 {
         float: none;
         display: block;
         margin: 10px auto;
         max-width: 90%;
     }
 }
-
-#video1 {}
