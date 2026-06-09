@@ -1,6 +1,114 @@
+body {
+    border: 0px;
+    margin: 0px;
+    gap: 0px;
+    padding: 20px;
+    font-size: 18px;
+    font-family: 'arial',
+        arial,
+        arial;
+    color: rgb(0, 0, 0);
+}
+
+/*Fotos standaard*/
+img {
+    border: 10px;
+    margin: 10px;
+    size: auto;
+    height: auto;
+}
+
+iframe {
+    max-width: 100%;
+
+    display: block;
+    margin: 20px auto;
+}
+
+/*De basisstijl navigatiebalk */
+.navigatiebalk {
+    border: 0px;
+    margin: 0px;
+    font-size: 18px;
+    font-family: 'Times New Roman',
+        Times,
+        serif;
+    background-color: rgb(254, 215, 0);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-right: 3px;
+    padding-left: 3px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.navigatiebalk div {
+    border: 0px;
+    margin: 0px;
+    font-size: 18px;
+    font-family: 'Times New Roman',
+        Times,
+        serif;
+    background-color: rgba(10, 100, 254, 0.897);
+    padding: 6px 12px;
+    /* Ruimte binnenin het knopje */
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+}
+
+/* Zorgt dat de hover hieronder soepel verloopt */
+/* Wat er gebeurt als je over een KNOP zweeft */
+.navigatiebalk div:hover {
+    background-color: rgba(255, 0, 0, 0.5);
+    /* Knop licht op bij hover */
+}
+
+/*fix chrome standaard*/
+.navigatiebalk a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
 /*Het huisje in de navigatie bar*/
 .homeicon {
     color: rgb(0, 0, 0);
-    font-size: 24px;
-    -webkit-text-stroke: 1px rgb(0, 0, 0);
+    font-size: 19px;
+    -webkit-text-stroke: 2.0px rgb(0, 0, 0);
+    margin-right: 3px;
 }
+
+#foto1 {
+    display: block;
+    float: right;
+    max-width: 100%;
+    height: 100%;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+#foto2 {
+    display: block;
+    float: right;
+    max-width: 99.3%;
+    height: auto;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+
+    #foto-regel,
+    #video1 {
+        float: none;
+        display: block;
+        margin: 10px auto;
+        max-width: 90%;
+    }
+}
+
+#video1 {}
