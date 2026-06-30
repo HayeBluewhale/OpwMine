@@ -99,7 +99,7 @@ footer {
     padding: 3px;
 }
 
-#lifooter {
+.lifooter {
     font-size: 10px;
     font-weight: normal;
 }
@@ -153,7 +153,8 @@ footer {
 
 @media {
 
-    (max-width: 768px) #foto1,
+    max-width: 768px,
+    #foto1,
     #foto2 #video1 {
         float: none;
         padding: 20px;
